@@ -1,0 +1,61 @@
+{
+  "cliente": "cliente-exemplo",
+  "nome_exibicao": "Clínica Estética Exemplo",
+  "ativo": false,
+  "_nota": "Exemplo de estrutura de cliente com dados fictícios (IDs, MCPs e URLs não existem). Não é cliente: ativo false para os agentes e scripts não tratarem a pasta como implantação.",
+
+  "mcps": {
+    "n8n": "n8n-mcp-exemplo",
+    "supabase": "supabase-mcp-exemplo"
+  },
+
+  "kommo": {
+    "domain": "clinicaexemplo.amocrm.com",
+    "account_id": 99999999,
+    "env_file": "clientes/cliente-exemplo/kommo-crm/.env"
+  },
+
+  "n8n": {
+    "base_url": "https://n8n.clinicaexemplo.com",
+    "webhook_fup": "https://n8n.clinicaexemplo.com/webhook/followup-abc123"
+  },
+
+  "supabase": {
+    "project_ref": "abcdefghijklmnop",
+    "project_url": "https://abcdefghijklmnop.supabase.co"
+  },
+
+  "kommo_ids": {
+    "pipelines": {
+      "venda":     12000001,
+      "pos_venda": 12000002
+    },
+    "stages": {
+      "venda": {
+        "novo_lead":         90000001,
+        "qualificado":       90000002,
+        "agendado":          90000003,
+        "compareceu":        90000004,
+        "proposta_enviada":  90000005,
+        "ganho":             90000006,
+        "perdido":           90000007
+      },
+      "pos_venda": {
+        "cliente_ativo":     90000010,
+        "retorno_agendado":  90000011,
+        "inativo":           90000012
+      }
+    },
+    "custom_fields": {
+      "lead": {
+        "procedimento_interesse": 11000001,
+        "orcamento":              11000002,
+        "origem":                 11000003
+      },
+      "contact": {
+        "whatsapp":               11000010,
+        "data_nascimento":        11000011
+      }
+    }
+  }
+}

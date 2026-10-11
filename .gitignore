@@ -1,0 +1,16 @@
+# credenciais: nunca vão para o git
+.env
+.env.*
+!.env.exemplo
+*.pem
+*.key
+
+# configuração local do Claude Code (pode guardar chave)
+.claude/settings.local.json
+
+# sistema e ferramentas
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+*.pyc
